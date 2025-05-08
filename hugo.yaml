@@ -1,4 +1,108 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: https://jhlee7854.github.io/
+languageCode: ko-KR
+title: In my perspective
 theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainSections: ["posts"]
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - name: Posts
+      pageRef: posts
+      weight: 1
+    - name: Archive
+      pageRef: archives
+      weight: 5
+    - name: Search
+      pageRef: search
+      weight: 10
+    - name: Tags
+      pageRef: tags
+      weight: 10
+
+params:
+  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "제가 알고 있는 것들을 정리하는 블로그입니다."
+  author: 이종학
+  # images: [""]
+  keywords: [blog, programming, devops]
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  defaultTheme: auto
+  # disableThemeToggle: true
+  # disableSpecial1stPost: true
+  hideMeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  # ShareButtons: [“linkedin”, “x”]
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  # comments: false
+  displayFullLangName: true
+
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+
+  homeInfoParams:
+    Title: ":book: 그까이꺼 뭐 대충 :house:"
+    Content: >
+      :robot: 제가 알게된 것들을 정리하는 블로그입니다. :memo:
+
+  assets:
+    favicon: "favicon.ico"
+    disableHLJS: true
+
+  cover:
+    hiddenInList: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+  # socialIcons:
+  #   - name: github
+  #     title: View Source on Github
+  #     url: "https://github.com/jhlee7854"
+  #   - name: linkedin
+  #     title: Connect on LinkedIn
+  #     url: "https://www.linkedin.com/in/jonghak-lee/"
+  #   - name: X
+  #     title: Share PaperMod on X/Twitter
+  #     url: "https://x.com/jhlee7854"
+
+  editPost:
+    URL: "https://github.com/jhlee7854/jhlee7854.github.io/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
