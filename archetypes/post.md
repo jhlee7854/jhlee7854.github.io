@@ -2,7 +2,7 @@
 draft: true
 date: '{{ .Date }}'
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-description: ""
+summary: ""
 tags: ["post"]
 searchHidden: false
 disableShare: false

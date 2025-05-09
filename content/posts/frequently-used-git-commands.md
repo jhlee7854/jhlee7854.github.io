@@ -2,7 +2,7 @@
 draft: false
 date: '2025-05-08T14:09:41+09:00'
 title: '자주 사용할 것 같은 git 명령어'
-description: "평소에 자주 사용할 것 같은 git 명령어들을 정리하였다."
+summary: "평소에 자주 사용할 것 같은 git 명령어들을 정리하였다."
 tags: ["post", "git"]
 searchHidden: false
 disableShare: false
