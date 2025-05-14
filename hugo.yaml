@@ -63,7 +63,7 @@ params:
   ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
-  # comments: false
+  comments: true
   displayFullLangName: true
 
   ShowAllPagesInArchive: true
