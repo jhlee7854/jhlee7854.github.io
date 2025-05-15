@@ -232,7 +232,7 @@ telepresence replace example-app --container echo-server --env-file /tmp/example
 intercept 명령은 특정 서비스 트래픽을 가로채서 로컬 PC로 라우팅 한다. replace는 트래픽을 가로채는 것과 더불어 대상 워크로드에서 지정된 컨테이너를 제거하는 반면 intercept는 트래픽만 가로채서 로컬 PC로 전달하므로 대상 워크로드가 트래픽과 관련없는 작업을 지속해서 수행할 수 있다.
 
 ```sh
-telepresence intercept ${WORKLOAD_NAME} --port ${LOCAL_PORT}:${REMOTE_CONTAINER_PORT} --env-file ${ENVIRONMENT_FILE_PATH} --mount ${MOUNT_POINT_PATH}
+# telepresence intercept ${WORKLOAD_NAME} --port ${LOCAL_PORT}:${REMOTE_CONTAINER_PORT} --env-file ${ENVIRONMENT_FILE_PATH} --mount ${MOUNT_POINT_PATH}
 telepresence intercept example-app --port 8080:http --env-file ~/example-app-intercept.env --mount /tmp/example-app-mounts
 ```
 
